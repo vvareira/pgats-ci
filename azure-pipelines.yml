@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 
-# Clone do projeto
+# Clone do projeto executado por padrao, este comando so precisa declarar quando quiser alterar alguma configuracao:
 - checkout: self
 
 - task: NodeTool@0
