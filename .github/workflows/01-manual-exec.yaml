@@ -43,14 +43,11 @@ jobs:
           - name: execucao dos testes
             run:  yarn run e2e
 
-          ##Exercício 2 Action Notify Discord
-          - name: Notificar Discord
-            uses: th0th/notify-discord@v0.4.1
-            if: ${{ always() }}  
-            env:
-              DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-              GITHUB_ACTOR: ${{ github.actor }}
-              GITHUB_JOB_NAME: "Build and deploy"
-              GITHUB_JOB_STATUS: ${{ job.status }}
-
-
+          ##Exercício 2 Actions Status Discord
+          - name: Discord Notification
+            if: always()
+            uses: sarisia/actions-status-discord@v1
+            with:
+              webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+              status: ${{ job.status }}
+              title: "Resultado da Pipeline"
