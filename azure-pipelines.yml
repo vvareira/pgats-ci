@@ -1,0 +1,41 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Inicio da pipeline!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+
+# Clone do projeto executado por padrao, este comando so precisa declarar quando quiser alterar alguma configuracao:
+- checkout: self
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '24.x'
+
+- script: npm install -g yarn
+  displayName: 'Instalar Yarn'
+
+- script: yarn install
+  displayName: 'Instalar dependências'
+
+- script: yarn playwright install
+  displayName: 'Instalar browsers do Playwright'
+
+- script: yarn run e2e
+  displayName: 'Executar testes'
+
+
