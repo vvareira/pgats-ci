@@ -43,14 +43,9 @@ jobs:
           - name: execucao dos testes
             run:  yarn run e2e
 
-          ##Exercício 2 Actions Status Discord
-          - name: Send Discord Message
-            uses: Ilshidur/action-discord@master
-            env:
-              DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
-              DISCORD_USERNAME: GitHub Actions
-              DISCORD_AVATAR: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-            with:
-              args: 'Pipeline finalizada com status: ${{ job.status }}'
+          # Exercício 2 Actions Status Discord
+          - name: Discord Notification
+            if: always()
+            run: echo "Cheguei aqui"
                         
               
