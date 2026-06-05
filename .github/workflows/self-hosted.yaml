@@ -28,25 +28,21 @@ jobs:
               node-version: 24.x
 
           # instalacao do yarn
-          - name: instalacao Yarn
-            run: npm install -g yarn
+          #- name: instalacao Yarn
+          #  run: npm install -g yarn
 
           # instalação das dependencias
-          - name: instalacao dependencias
-            run: yarn install
+          #- name: instalacao dependencias
+          #  run: yarn install
 
           # instalação dos browsers do playwrite
-          - name: instalacao dos browsers do playwrite
-            run:  yarn playwright install
+          # - name: instalacao dos browsers do playwrite
+          #  run:  yarn playwright install
 
           # execucao dos testes
           - name: execucao dos testes
             run:  yarn run e2e
 
-          # Exercício 2 Actions Status Discord
-          - uses: sarisia/actions-status-discord@v1
-            if: always()
-            with:
-              webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
                         
               
