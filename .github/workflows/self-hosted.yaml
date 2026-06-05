@@ -17,27 +17,14 @@ jobs:
       #Para rodar self-hosted basta trocar o runs-on para self-hosted:
       runs-on: self-hosted
 
+      defaults:
+        run:
+          shell: cmd
+
       #passos do job
       steps:
           # clone do projeto
-          - uses: actions/checkout@v4
-
-          #instalação do node
-          - uses: actions/setup-node@v4
-            with: 
-              node-version: 24.x
-
-          # instalacao do yarn
-          #- name: instalacao Yarn
-          #  run: npm install -g yarn
-
-          # instalação das dependencias
-          #- name: instalacao dependencias
-          #  run: yarn install
-
-          # instalação dos browsers do playwrite
-          # - name: instalacao dos browsers do playwrite
-          #  run:  yarn playwright install
+          - uses: actions/checkout@v4          
 
           # execucao dos testes
           - name: execucao dos testes
