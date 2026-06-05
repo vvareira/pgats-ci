@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 21,
+  "agentName": "JCP",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus25.actions.githubusercontent.com/vL6DEwoN4ZjeaCYIWizP9tFtSc3niETSDtTLMmfU6PJGcFOynY/",
+  "gitHubUrl": "https://github.com/vvareira/pgats-ci",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
