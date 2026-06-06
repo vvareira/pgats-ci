@@ -1,0 +1,5025 @@
+[2026-06-05 00:35:51Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:51Z INFO HostContext] Well known config file 'Credentials': 'C:\projetos\pgats-ci\.credentials'
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:51Z INFO HostContext] Well known config file 'Runner': 'C:\projetos\pgats-ci\.runner'
+[2026-06-05 00:35:51Z INFO Worker] Version: 2.334.0
+[2026-06-05 00:35:51Z INFO Worker] Commit: f1995ede5d885c997d13d8eca5467c4ce97fe69c
+[2026-06-05 00:35:51Z INFO Worker] Culture: pt-BR
+[2026-06-05 00:35:51Z INFO Worker] UI Culture: pt-BR
+[2026-06-05 00:35:51Z INFO Worker] Waiting to receive the job message from the channel.
+[2026-06-05 00:35:51Z INFO ProcessChannel] Receiving message of length 21706, with hash '57029fbedfed6a9252f1f6ea918b7f0ab2aaaa51bc6c195012b3e0c783fc139a'
+[2026-06-05 00:35:51Z INFO Worker] Message received.
+[2026-06-05 00:35:51Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/self-hosted.yaml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "d636a7e0-73c9-4637-8a4c-37c24aaa7ee8",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-node",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "contextName": "__actions_setup-node",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 28,
+        "col": 15,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 15,
+              "lit": "node-version"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 29,
+              "lit": "24.x"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "637252d4-5a59-4c76-bf58-71a22f610f7e",
+      "name": "__actions_setup-node"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 31,
+        "col": 19,
+        "lit": "instalacao Yarn"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 32,
+              "col": 18,
+              "lit": "npm install -g yarn"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "2fcaa5fb-0a10-4023-9ea4-2b0c41c78f86",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 35,
+        "col": 19,
+        "lit": "instalacao dependencias"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 36,
+              "col": 18,
+              "lit": "yarn install"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "8c62a68f-4ab5-4621-bcf7-2264f8ddb496",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 39,
+        "col": 19,
+        "lit": "instalacao dos browsers do playwrite"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 40,
+              "col": 19,
+              "lit": "yarn playwright install"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "f429e659-451e-482c-bb34-650eacadcff0",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 43,
+        "col": 19,
+        "lit": "execucao dos testes"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 44,
+              "col": 19,
+              "lit": "yarn run e2e"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "f35ddc3b-be6b-47b1-b669-67564c8ff80b",
+      "name": "__run_4"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "sarisia/actions-status-discord",
+        "ref": "v1",
+        "repositoryType": "GitHub"
+      },
+      "contextName": "__sarisia_actions-status-discord",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 50,
+        "col": 15,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 50,
+              "col": 15,
+              "lit": "webhook"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 50,
+              "col": 24,
+              "expr": "secrets.DISCORD_WEBHOOK_URL"
+            }
+          }
+        ]
+      },
+      "condition": "always()",
+      "id": "4a5a9745-2707-4699-8b64-3e15185302f6",
+      "name": "__sarisia_actions-status-discord"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DISCORD_WEBHOOK_URL": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions.runner.requirenode24": {
+      "value": "false"
+    },
+    "actions.runner.usenode24bydefault": {
+      "value": "false"
+    },
+    "actions.runner.warnonnode20": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "true"
+    },
+    "actions_batch_action_resolution": {
+      "value": "false"
+    },
+    "actions_container_action_runner_temp": {
+      "value": "true"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_runner_compare_workflow_parser": {
+      "value": "false"
+    },
+    "actions_runner_deprecate_linux_arm32": {
+      "value": "false"
+    },
+    "actions_runner_emit_composite_markers": {
+      "value": "false"
+    },
+    "actions_runner_kill_linux_arm32": {
+      "value": "false"
+    },
+    "actions_runner_node20_removal_date": {
+      "value": ""
+    },
+    "actions_runner_node24_default_date": {
+      "value": "June 16th, 2026"
+    },
+    "actions_service_container_command": {
+      "value": "true"
+    },
+    "actions_set_orchestration_id_env_for_actions": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_snapshot_preflight_hosted_runner_check": {
+      "value": "false"
+    },
+    "actions_snapshot_preflight_image_gen_pool_check": {
+      "value": "false"
+    },
+    "actions_use_bearer_token_for_codeload": {
+      "value": "false"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "e2e-tests"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "1062b024-4981-4267-9551-c2fa119080c9.e2e-tests.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "e2e-tests"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "1062b024-4981-4267-9551-c2fa119080c9",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "1062b024-4981-4267-9551-c2fa119080c9",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "0f7f1221-09d8-5c62-ac0f-73a79adeba80",
+  "jobDisplayName": "e2e-tests",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/vL6DEwoN4ZjeaCYIWizP9tFtSc3niETSDtTLMmfU6PJGcFOynY/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus25.actions.githubusercontent.com/vL6DEwoN4ZjeaCYIWizP9tFtSc3niETSDtTLMmfU6PJGcFOynY/",
+          "GenerateIdTokenUrl": "",
+          "ConnectivityChecks": "[\"https://broker.actions.githubusercontent.com/health\",\"https://token.actions.githubusercontent.com/ready\",\"https://run.actions.githubusercontent.com/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-3-azure-eastus.actions.githubusercontent.com/85/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/master"
+        },
+        {
+          "k": "sha",
+          "v": "5fe64b7d70d1296b6082ac6324439eb937829f68"
+        },
+        {
+          "k": "repository",
+          "v": "vvareira/pgats-ci"
+        },
+        {
+          "k": "repository_owner",
+          "v": "vvareira"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "57268454"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/vvareira/pgats-ci.git"
+        },
+        {
+          "k": "run_id",
+          "v": "26988104489"
+        },
+        {
+          "k": "run_number",
+          "v": "1"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "57268454"
+        },
+        {
+          "k": "actor",
+          "v": "vvareira"
+        },
+        {
+          "k": "workflow",
+          "v": "Execução Manual com Self-Hosted"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "workflow_dispatch"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "master"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "ref",
+                "v": "refs/heads/master"
+              },
+              {
+                "k": "workflow",
+                "v": ".github/workflows/self-hosted.yaml"
+              },
+              {
+                "k": "inputs",
+                "v": null
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "id",
+                      "v": 1247750481.0
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOSl8pUQ"
+                    },
+                    {
+                      "k": "name",
+                      "v": "pgats-ci"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "vvareira/pgats-ci"
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "login",
+                            "v": "vvareira"
+                          },
+                          {
+                            "k": "id",
+                            "v": 57268454.0
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjU3MjY4NDU0"
+                          },
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/57268454?v=4"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/vvareira"
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/vvareira"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/vvareira/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/vvareira/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/vvareira/gists{/gist_id}"
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/vvareira/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/vvareira/subscriptions"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/vvareira/orgs"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/vvareira/repos"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/vvareira/events{/privacy}"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/vvareira/received_events"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/vvareira/pgats-ci"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "fork",
+                      "v": true
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci"
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/forks"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/keys{/key_id}"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/teams"
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/hooks"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/issues/events{/number}"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/events"
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/assignees{/user}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/branches{/branch}"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/tags"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/git/refs{/sha}"
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/git/trees{/sha}"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/statuses/{sha}"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/languages"
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/stargazers"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/contributors"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/subscription"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/commits{/sha}"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/git/commits{/sha}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/comments{/number}"
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/issues/comments{/number}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/contents/{+path}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/merges"
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/downloads"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/issues{/number}"
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/pulls{/number}"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/milestones{/number}"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/labels{/name}"
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/releases{/id}"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/vvareira/pgats-ci/deployments"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": "2026-05-23T18:21:03Z"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2026-06-05T00:34:11Z"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": "2026-06-05T00:34:03Z"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/vvareira/pgats-ci.git"
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:vvareira/pgats-ci.git"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/vvareira/pgats-ci.git"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/vvareira/pgats-ci"
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "size",
+                      "v": 6202.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    },
+                    {
+                      "k": "has_pull_requests",
+                      "v": true
+                    },
+                    {
+                      "k": "pull_request_creation_policy",
+                      "v": "all"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "master"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "login",
+                      "v": "vvareira"
+                    },
+                    {
+                      "k": "id",
+                      "v": 57268454.0
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjU3MjY4NDU0"
+                    },
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/57268454?v=4"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/vvareira"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/vvareira"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/vvareira/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/vvareira/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/vvareira/gists{/gist_id}"
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/vvareira/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/vvareira/subscriptions"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/vvareira/orgs"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/vvareira/repos"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/vvareira/events{/privacy}"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/vvareira/received_events"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "vvareira/pgats-ci/.github/workflows/self-hosted.yaml@refs/heads/master"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "5fe64b7d70d1296b6082ac6324439eb937829f68"
+        },
+        {
+          "k": "repository_id",
+          "v": "1247750481"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "vvareira"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "job": {
+      "t": 2,
+      "d": [
+        {
+          "k": "check_run_id",
+          "v": 79642105309.0
+        },
+        {
+          "k": "workflow_ref",
+          "v": "vvareira/pgats-ci/.github/workflows/self-hosted.yaml@refs/heads/master"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "5fe64b7d70d1296b6082ac6324439eb937829f68"
+        },
+        {
+          "k": "workflow_repository",
+          "v": "vvareira/pgats-ci"
+        },
+        {
+          "k": "workflow_file_path",
+          "v": ".github/workflows/self-hosted.yaml"
+        }
+      ]
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOA2nY5g"
+}
+[2026-06-05 00:35:51Z INFO JobRunner] Job ID 0f7f1221-09d8-5c62-ac0f-73a79adeba80
+[2026-06-05 00:35:51Z INFO ConfigurationStore] currentAssemblyLocation: C:\projetos\pgats-ci\bin\Runner.Worker.dll
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:51Z INFO ConfigurationStore] binPath: C:\projetos\pgats-ci\bin
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:51Z INFO ConfigurationStore] RootFolder: C:\projetos\pgats-ci
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:51Z INFO HostContext] Well known config file 'Runner': 'C:\projetos\pgats-ci\.runner'
+[2026-06-05 00:35:51Z INFO ConfigurationStore] ConfigFilePath: C:\projetos\pgats-ci\.runner
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:51Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\projetos\pgats-ci\.runner_migrated'
+[2026-06-05 00:35:51Z INFO ConfigurationStore] MigratedConfigFilePath: C:\projetos\pgats-ci\.runner_migrated
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:51Z INFO HostContext] Well known config file 'Credentials': 'C:\projetos\pgats-ci\.credentials'
+[2026-06-05 00:35:51Z INFO ConfigurationStore] CredFilePath: C:\projetos\pgats-ci\.credentials
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:51Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\projetos\pgats-ci\.credentials_migrated'
+[2026-06-05 00:35:51Z INFO ConfigurationStore] MigratedCredFilePath: C:\projetos\pgats-ci\.credentials_migrated
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:51Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:51Z INFO HostContext] Well known config file 'Service': 'C:\projetos\pgats-ci\.service'
+[2026-06-05 00:35:51Z INFO ConfigurationStore] ServiceConfigFilePath: C:\projetos\pgats-ci\.service
+[2026-06-05 00:35:51Z INFO ConfigurationStore] Read setting file: 385 chars
+[2026-06-05 00:35:51Z INFO JobRunner] Initializing launch client
+[2026-06-05 00:35:52Z INFO JobServerQueue] Initializing results client
+[2026-06-05 00:35:52Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2026-06-05 00:35:52Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2026-06-05 00:35:52Z INFO JobServerQueue] Start process web console line queue.
+[2026-06-05 00:35:52Z INFO JobServerQueue] Start process file upload queue.
+[2026-06-05 00:35:52Z INFO JobServerQueue] Start results file upload queue.
+[2026-06-05 00:35:52Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-06-05 00:35:52Z INFO JobServerQueue] Start process timeline update queue.
+[2026-06-05 00:35:52Z INFO ExecutionContext] Initializing Job context
+[2026-06-05 00:35:52Z INFO ExecutionContext] Initialize GitHub context
+[2026-06-05 00:35:52Z INFO ExecutionContext] Initialize Env context
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:52Z INFO JobRunner] Starting the job execution context.
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:52Z INFO JobRunner] Validating directory permissions for: 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Tools': 'C:\projetos\pgats-ci\_work\_tool'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:35:52Z INFO JobRunner] Getting job extension.
+[2026-06-05 00:35:52Z INFO JobRunner] Initialize job. Getting all job steps.
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known config file 'Credentials': 'C:\projetos\pgats-ci\.credentials'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known config file 'SetupInfo': 'C:\projetos\pgats-ci\.setup_info'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:52Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\projetos\pgats-ci\_work\_PipelineMapping\vvareira/pgats-ci\PipelineFolder.json
+[2026-06-05 00:35:52Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:52Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:52Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:52Z INFO JobExtension] Downloading actions
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:52Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:52Z INFO Worker] Listening for cancel message from the channel.
+[2026-06-05 00:35:52Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2026-06-05 00:35:52Z INFO ResultServer] Successfully started websocket client.
+[2026-06-05 00:35:52Z INFO JobServerQueue] Try to append 1 batches web console lines for record '025ee17c-d5e8-47ad-9df0-c353c241da43', success rate: 1/1.
+[2026-06-05 00:35:53Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:53Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:53Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:53Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:53Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:53Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:53Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:53Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:53Z INFO ActionManager] Save archive 'https://codeload.github.com/actions/checkout/zip/34e114876b0b11c390a56381ad16ebd13914f8d5' into C:\projetos\pgats-ci\_work\_actions\_temp_f0e74fb8-bc2b-4c17-b405-eeadc28de044\3c0c52b2-cb09-463f-a80d-63d6ceff8e64.zip.
+[2026-06-05 00:35:53Z INFO ActionManager] Using Basic token for action archive download.
+[2026-06-05 00:35:53Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2026-06-05 00:35:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record '025ee17c-d5e8-47ad-9df0-c353c241da43', success rate: 1/1.
+[2026-06-05 00:35:54Z INFO ActionManager] Request URL: https://codeload.github.com/actions/checkout/zip/34e114876b0b11c390a56381ad16ebd13914f8d5 X-GitHub-Request-Id: 30B8:2A8AC1:6D56:1B304:6A2219E9 Http Status: OK
+[2026-06-05 00:35:54Z INFO ActionManager] Finished getting action repository.
+[2026-06-05 00:35:54Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:54Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:54Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:54Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:54Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:54Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:54Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:54Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:54Z INFO ActionManager] Save archive 'https://codeload.github.com/actions/setup-node/zip/49933ea5288caeca8642d1e84afbd3f7d6820020' into C:\projetos\pgats-ci\_work\_actions\_temp_255dfaa9-4aba-4f25-8a56-75e5b82e3242\f01dd498-5219-4657-9a43-233bc80fac89.zip.
+[2026-06-05 00:35:54Z INFO ActionManager] Using Basic token for action archive download.
+[2026-06-05 00:35:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '025ee17c-d5e8-47ad-9df0-c353c241da43', success rate: 1/1.
+[2026-06-05 00:35:55Z INFO ActionManager] Request URL: https://codeload.github.com/actions/setup-node/zip/49933ea5288caeca8642d1e84afbd3f7d6820020 X-GitHub-Request-Id: 30B9:2F690B:72D2:1B8C3:6A2219EA Http Status: OK
+[2026-06-05 00:35:56Z INFO ActionManager] Finished getting action repository.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManager] Save archive 'https://codeload.github.com/sarisia/actions-status-discord/zip/eb045afee445dc055c18d3d90bd0f244fd062708' into C:\projetos\pgats-ci\_work\_actions\_temp_3bf5a6e6-abac-44de-bdfb-ac9eaf68ce83\ebe8e2c0-6601-4700-b283-429adf58a32d.zip.
+[2026-06-05 00:35:56Z INFO ActionManager] Using Basic token for action archive download.
+[2026-06-05 00:35:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '025ee17c-d5e8-47ad-9df0-c353c241da43', success rate: 1/1.
+[2026-06-05 00:35:56Z INFO ActionManager] Request URL: https://codeload.github.com/sarisia/actions-status-discord/zip/eb045afee445dc055c18d3d90bd0f244fd062708 X-GitHub-Request-Id: 30BA:2E54F5:6AA1:1AFBB:6A2219EC Http Status: OK
+[2026-06-05 00:35:56Z INFO ActionManager] Finished getting action repository.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-06-05 00:35:56Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:35:56Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManager] Load action that reference repository from 'C:\projetos\pgats-ci\_work\_actions\actions\checkout\v4'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:35:56Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-05 00:35:56Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-06-05 00:35:56Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 3,
+          "lit": "mirror"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 30,
+          "col": 3,
+          "lit": "mirror-token"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:35:56Z INFO ActionManager] Action node.js file: dist/setup/index.js, no more preparation.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManager] Load action that reference repository from 'C:\projetos\pgats-ci\_work\_actions\actions\setup-node\v4'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 3,
+          "lit": "mirror"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 30,
+          "col": 3,
+          "lit": "mirror-token"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:35:56Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-05 00:35:56Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2026-06-05 00:35:56Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Ignore action property branding.
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Actions Status Discord",
+  "description": "Post Github Actions CI status to Discord",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 6,
+          "col": 3,
+          "lit": "webhook"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 9,
+          "col": 3,
+          "lit": "status"
+        },
+        "value": {
+          "type": 3,
+          "file": 4,
+          "line": 12,
+          "col": 14,
+          "expr": "job.status"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 13,
+          "col": 3,
+          "lit": "job"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 16,
+          "col": 3,
+          "lit": "content"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 19,
+          "col": 3,
+          "lit": "title"
+        },
+        "value": {
+          "type": 3,
+          "file": 4,
+          "line": 22,
+          "col": 14,
+          "expr": "github.workflow"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 23,
+          "col": 3,
+          "lit": "description"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 26,
+          "col": 3,
+          "lit": "image"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 29,
+          "col": 3,
+          "lit": "color"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 32,
+          "col": 3,
+          "lit": "url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 35,
+          "col": 3,
+          "lit": "username"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 38,
+          "col": 3,
+          "lit": "avatar_url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 41,
+          "col": 3,
+          "lit": "nofail"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 44,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 45,
+          "col": 3,
+          "lit": "nocontext"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 48,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 49,
+          "col": 3,
+          "lit": "noprefix"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 52,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 53,
+          "col": 3,
+          "lit": "nodetail"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 56,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 57,
+          "col": 3,
+          "lit": "notimestamp"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 60,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 61,
+          "col": 3,
+          "lit": "ack_no_webhook"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 64,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "lib/index.js",
+    "pre": null,
+    "post": null,
+    "nodeVersion": "node24",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:35:56Z INFO ActionManager] Action node.js file: lib/index.js, no more preparation.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManager] Load action that reference repository from 'C:\projetos\pgats-ci\_work\_actions\sarisia\actions-status-discord\v1'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Ignore action property branding.
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Actions Status Discord",
+  "description": "Post Github Actions CI status to Discord",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 6,
+          "col": 3,
+          "lit": "webhook"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 9,
+          "col": 3,
+          "lit": "status"
+        },
+        "value": {
+          "type": 3,
+          "file": 4,
+          "line": 12,
+          "col": 14,
+          "expr": "job.status"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 13,
+          "col": 3,
+          "lit": "job"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 16,
+          "col": 3,
+          "lit": "content"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 19,
+          "col": 3,
+          "lit": "title"
+        },
+        "value": {
+          "type": 3,
+          "file": 4,
+          "line": 22,
+          "col": 14,
+          "expr": "github.workflow"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 23,
+          "col": 3,
+          "lit": "description"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 26,
+          "col": 3,
+          "lit": "image"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 29,
+          "col": 3,
+          "lit": "color"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 32,
+          "col": 3,
+          "lit": "url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 35,
+          "col": 3,
+          "lit": "username"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 38,
+          "col": 3,
+          "lit": "avatar_url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 41,
+          "col": 3,
+          "lit": "nofail"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 44,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 45,
+          "col": 3,
+          "lit": "nocontext"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 48,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 49,
+          "col": 3,
+          "lit": "noprefix"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 52,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 53,
+          "col": 3,
+          "lit": "nodetail"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 56,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 57,
+          "col": 3,
+          "lit": "notimestamp"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 60,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 61,
+          "col": 3,
+          "lit": "ack_no_webhook"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 64,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "lib/index.js",
+    "pre": null,
+    "post": null,
+    "nodeVersion": "node24",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:35:56Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-05 00:35:56Z INFO ActionManager] Action node.js file: lib/index.js.
+[2026-06-05 00:35:56Z INFO ActionManager] Action post node.js file: N/A.
+[2026-06-05 00:35:56Z INFO JobExtension] Adding .
+[2026-06-05 00:35:56Z INFO JobExtension] Adding .
+[2026-06-05 00:35:56Z INFO JobExtension] Adding .
+[2026-06-05 00:35:56Z INFO JobExtension] Adding .
+[2026-06-05 00:35:56Z INFO JobExtension] Adding .
+[2026-06-05 00:35:56Z INFO JobExtension] Adding .
+[2026-06-05 00:35:56Z INFO JobExtension] Adding .
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO JobExtension] Total accessible running process: 288.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO JobExtension] Start checking server connectivity.
+[2026-06-05 00:35:56Z INFO JobExtension] Check server connectivity for https://broker.actions.githubusercontent.com/health.
+[2026-06-05 00:35:56Z INFO JobExtension] Check server connectivity for https://token.actions.githubusercontent.com/ready.
+[2026-06-05 00:35:56Z INFO JobExtension] Check server connectivity for https://run.actions.githubusercontent.com/health.
+[2026-06-05 00:35:56Z INFO JobExtension] Start checking service connectivity in background.
+[2026-06-05 00:35:56Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "025ee17c-d5e8-47ad-9df0-c353c241da43",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 5,
+  "startTime": "2026-06-05T00:35:52.0735961Z",
+  "finishTime": "2026-06-05T00:35:56.8880018Z"
+}.
+[2026-06-05 00:35:56Z INFO JobRunner] Total job steps: 7.
+[2026-06-05 00:35:56Z INFO JobRunner] Run all job steps.
+[2026-06-05 00:35:56Z INFO DapDebugger] DapDebugger initialized
+[2026-06-05 00:35:56Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v4'
+[2026-06-05 00:35:56Z INFO StepsRunner] Evaluating: success()
+[2026-06-05 00:35:56Z INFO StepsRunner] Result: true
+[2026-06-05 00:35:56Z INFO StepsRunner] Starting the step.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-05 00:35:56Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper] Process started with process id 29984, waiting for process exit.
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper] Finished process 29984 with exit code 0, and elapsed time 00:00:00.0232525.
+[2026-06-05 00:35:56Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManager] Load action that reference repository from 'C:\projetos\pgats-ci\_work\_actions\actions\checkout\v4'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:35:56Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-05 00:35:56Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-06-05 00:35:56Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-06-05 00:35:56Z INFO ExecutionContext] Reserve record order 9 to 16 for post job actions.
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:35:56Z INFO ExecutionContext] Write event payload to C:\projetos\pgats-ci\_work\_temp\_github_workflow\event.json
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:35:56Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "vvareira/pgats-ci"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:35:56Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-06-05 00:35:56Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-05 00:35:56Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:35:56Z INFO HostContext] Well known directory 'Externals': 'C:\projetos\pgats-ci\externals'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   File name: 'C:\projetos\pgats-ci\externals\node20\bin\node.exe'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Arguments: '"C:\projetos\pgats-ci\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work\pgats-ci\pgats-ci'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:35:56Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:35:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '025ee17c-d5e8-47ad-9df0-c353c241da43', success rate: 1/1.
+[2026-06-05 00:35:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:35:57Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-05 00:35:57Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\projetos\pgats-ci\_diag\blocks\1062b024-4981-4267-9551-c2fa119080c9_025ee17c-d5e8-47ad-9df0-c353c241da43.1
+[2026-06-05 00:35:57Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-05 00:35:58Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-06-05 00:35:58Z INFO ProcessInvokerWrapper] Process started with process id 4184, waiting for process exit.
+[2026-06-05 00:35:58Z INFO AddMaskCommandExtension] Add new secret mask with length of 588
+[2026-06-05 00:35:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:35:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:06Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:06Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:06Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:16Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:16Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:16Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd636a7e0-73c9-4637-8a4c-37c24aaa7ee8', success rate: 1/1.
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] Finished process 4184 with exit code 0, and elapsed time 00:00:24.7287835.
+[2026-06-05 00:36:21Z INFO CreateStepSummaryCommand] Step Summary file (C:\projetos\pgats-ci\_work\_temp\_runner_file_commands\step_summary_41cbdd07-5bda-4f8a-bc67-e7496213934e) is empty; skipping attachment upload
+[2026-06-05 00:36:21Z INFO StepsRunner] Step result: 
+[2026-06-05 00:36:21Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "d636a7e0-73c9-4637-8a4c-37c24aaa7ee8",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 25,
+  "startTime": "2026-06-05T00:35:56.9074171Z",
+  "finishTime": "2026-06-05T00:36:21.7199821Z"
+}.
+[2026-06-05 00:36:21Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-06-05 00:36:21Z INFO StepsRunner] Current state: job state = ''
+[2026-06-05 00:36:21Z INFO StepsRunner] Processing step: DisplayName='Run actions/setup-node@v4'
+[2026-06-05 00:36:21Z INFO StepsRunner] Evaluating: success()
+[2026-06-05 00:36:21Z INFO StepsRunner] Result: true
+[2026-06-05 00:36:21Z INFO StepsRunner] Starting the step.
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:21Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-05 00:36:21Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] Process started with process id 31856, waiting for process exit.
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] Finished process 31856 with exit code 0, and elapsed time 00:00:00.0128195.
+[2026-06-05 00:36:21Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:36:21Z INFO ActionManager] Load action that reference repository from 'C:\projetos\pgats-ci\_work\_actions\actions\setup-node\v4'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 3,
+          "lit": "mirror"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 30,
+          "col": 3,
+          "lit": "mirror-token"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:36:21Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-05 00:36:21Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2026-06-05 00:36:21Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:36:21Z INFO ExecutionContext] Write event payload to C:\projetos\pgats-ci\_work\_temp\_github_workflow\event.json
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:36:21Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'always-auth': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 7,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'node-version-file': default value evaluate result: ""
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'architecture': default value evaluate result: ""
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'check-latest': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 16,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'registry-url': default value evaluate result: ""
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'scope': default value evaluate result: ""
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 23,
+  "col": 14,
+  "lit": "***"
+}
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'cache': default value evaluate result: ""
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'cache-dependency-path': default value evaluate result: ""
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'mirror': default value evaluate result: ""
+[2026-06-05 00:36:21Z INFO ActionManifestManagerLegacy] Input 'mirror-token': default value evaluate result: ""
+[2026-06-05 00:36:21Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-05 00:36:21Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:21Z INFO HostContext] Well known directory 'Externals': 'C:\projetos\pgats-ci\externals'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   File name: 'C:\projetos\pgats-ci\externals\node20\bin\node.exe'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Arguments: '"C:\projetos\pgats-ci\_work\_actions\actions\setup-node\v4\dist/setup/index.js"'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work\pgats-ci\pgats-ci'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:36:21Z INFO ProcessInvokerWrapper] Process started with process id 32580, waiting for process exit.
+[2026-06-05 00:36:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '637252d4-5a59-4c76-bf58-71a22f610f7e', success rate: 1/1.
+[2026-06-05 00:36:22Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-05 00:36:22Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-05 00:36:22Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\projetos\pgats-ci\_diag\blocks\1062b024-4981-4267-9551-c2fa119080c9_d636a7e0-73c9-4637-8a4c-37c24aaa7ee8.1
+[2026-06-05 00:36:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '637252d4-5a59-4c76-bf58-71a22f610f7e', success rate: 1/1.
+[2026-06-05 00:36:23Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-06-05 00:36:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '637252d4-5a59-4c76-bf58-71a22f610f7e', success rate: 1/1.
+[2026-06-05 00:36:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '637252d4-5a59-4c76-bf58-71a22f610f7e', success rate: 1/1.
+[2026-06-05 00:36:26Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:26Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:26Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '637252d4-5a59-4c76-bf58-71a22f610f7e', success rate: 1/1.
+[2026-06-05 00:36:36Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:36Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:36Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '637252d4-5a59-4c76-bf58-71a22f610f7e', success rate: 1/1.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Finished process 32580 with exit code 0, and elapsed time 00:00:20.5254041.
+[2026-06-05 00:36:42Z INFO CreateStepSummaryCommand] Step Summary file (C:\projetos\pgats-ci\_work\_temp\_runner_file_commands\step_summary_e49029d3-142e-4d0b-b3c2-8dc8d4f8a6c8) is empty; skipping attachment upload
+[2026-06-05 00:36:42Z INFO StepsRunner] Step result: 
+[2026-06-05 00:36:42Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/setup-node",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "637252d4-5a59-4c76-bf58-71a22f610f7e",
+  "stepContextName": "__actions_setup-node",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 21,
+  "startTime": "2026-06-05T00:36:21.7210284Z",
+  "finishTime": "2026-06-05T00:36:42.2787234Z"
+}.
+[2026-06-05 00:36:42Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-06-05 00:36:42Z INFO StepsRunner] Current state: job state = ''
+[2026-06-05 00:36:42Z INFO StepsRunner] Processing step: DisplayName='instalacao Yarn'
+[2026-06-05 00:36:42Z INFO StepsRunner] Evaluating: success()
+[2026-06-05 00:36:42Z INFO StepsRunner] Result: true
+[2026-06-05 00:36:42Z INFO StepsRunner] Starting the step.
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-05 00:36:42Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Process started with process id 24036, waiting for process exit.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Finished process 24036 with exit code 0, and elapsed time 00:00:00.0138503.
+[2026-06-05 00:36:42Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:36:42Z INFO ExecutionContext] Write event payload to C:\projetos\pgats-ci\_work\_temp\_github_workflow\event.json
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:36:42Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-05 00:36:42Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-05 00:36:42Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-06-05 00:36:42Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-06-05 00:36:42Z INFO ScriptHandler] Defaulting to powershell
+[2026-06-05 00:36:42Z INFO ScriptHandler] Which2: 'powershell'
+[2026-06-05 00:36:42Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:36:42Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-06-05 00:36:42Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-06-05 00:36:42Z INFO ScriptHandler] Defaulting to powershell
+[2026-06-05 00:36:42Z INFO ScriptHandler] Which2: 'powershell'
+[2026-06-05 00:36:42Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\projetos\pgats-ci\_work\_temp\c1f96bce-5aba-43aa-8314-a853dfd9988b.ps1'"'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work\pgats-ci\pgats-ci'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Process started with process id 24824, waiting for process exit.
+[2026-06-05 00:36:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '637252d4-5a59-4c76-bf58-71a22f610f7e', success rate: 1/1.
+[2026-06-05 00:36:42Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-05 00:36:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2fcaa5fb-0a10-4023-9ea4-2b0c41c78f86', success rate: 1/1.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Finished process 24824 with exit code 1, and elapsed time 00:00:00.5648201.
+[2026-06-05 00:36:42Z INFO CreateStepSummaryCommand] Step Summary file (C:\projetos\pgats-ci\_work\_temp\_runner_file_commands\step_summary_61e3e808-72e8-4493-961f-769e259ec824) is empty; skipping attachment upload
+[2026-06-05 00:36:42Z INFO StepsRunner] Step result: Failed
+[2026-06-05 00:36:42Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "2fcaa5fb-0a10-4023-9ea4-2b0c41c78f86",
+  "stepContextName": "__run",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 1."
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-06-05T00:36:42.2798326Z",
+  "finishTime": "2026-06-05T00:36:42.9156137Z"
+}.
+[2026-06-05 00:36:42Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2026-06-05 00:36:42Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-05 00:36:42Z INFO StepsRunner] Processing step: DisplayName='instalacao dependencias'
+[2026-06-05 00:36:42Z INFO StepsRunner] Evaluating: success()
+[2026-06-05 00:36:42Z INFO StepsRunner] Result: false
+[2026-06-05 00:36:42Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-06-05 00:36:42Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-06-05 00:36:42Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-05 00:36:42Z INFO StepsRunner] Processing step: DisplayName='instalacao dos browsers do playwrite'
+[2026-06-05 00:36:42Z INFO StepsRunner] Evaluating: success()
+[2026-06-05 00:36:42Z INFO StepsRunner] Result: false
+[2026-06-05 00:36:42Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-06-05 00:36:42Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-06-05 00:36:42Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-05 00:36:42Z INFO StepsRunner] Processing step: DisplayName='execucao dos testes'
+[2026-06-05 00:36:42Z INFO StepsRunner] Evaluating: success()
+[2026-06-05 00:36:42Z INFO StepsRunner] Result: false
+[2026-06-05 00:36:42Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-06-05 00:36:42Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-06-05 00:36:42Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-05 00:36:42Z INFO StepsRunner] Processing step: DisplayName='Run sarisia/actions-status-discord@v1'
+[2026-06-05 00:36:42Z INFO StepsRunner] Evaluating: always()
+[2026-06-05 00:36:42Z INFO StepsRunner] Result: true
+[2026-06-05 00:36:42Z INFO StepsRunner] Starting the step.
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-05 00:36:42Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Process started with process id 18652, waiting for process exit.
+[2026-06-05 00:36:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2fcaa5fb-0a10-4023-9ea4-2b0c41c78f86', success rate: 1/1.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Finished process 18652 with exit code 0, and elapsed time 00:00:00.0136956.
+[2026-06-05 00:36:42Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:36:42Z INFO ActionManager] Load action that reference repository from 'C:\projetos\pgats-ci\_work\_actions\sarisia\actions-status-discord\v1'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Ignore action property branding.
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Actions Status Discord",
+  "description": "Post Github Actions CI status to Discord",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 6,
+          "col": 3,
+          "lit": "webhook"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 9,
+          "col": 3,
+          "lit": "status"
+        },
+        "value": {
+          "type": 3,
+          "file": 4,
+          "line": 12,
+          "col": 14,
+          "expr": "job.status"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 13,
+          "col": 3,
+          "lit": "job"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 16,
+          "col": 3,
+          "lit": "content"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 19,
+          "col": 3,
+          "lit": "title"
+        },
+        "value": {
+          "type": 3,
+          "file": 4,
+          "line": 22,
+          "col": 14,
+          "expr": "github.workflow"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 23,
+          "col": 3,
+          "lit": "description"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 26,
+          "col": 3,
+          "lit": "image"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 29,
+          "col": 3,
+          "lit": "color"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 32,
+          "col": 3,
+          "lit": "url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 35,
+          "col": 3,
+          "lit": "username"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 38,
+          "col": 3,
+          "lit": "avatar_url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 41,
+          "col": 3,
+          "lit": "nofail"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 44,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 45,
+          "col": 3,
+          "lit": "nocontext"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 48,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 49,
+          "col": 3,
+          "lit": "noprefix"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 52,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 53,
+          "col": 3,
+          "lit": "nodetail"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 56,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 57,
+          "col": 3,
+          "lit": "notimestamp"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 60,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 61,
+          "col": 3,
+          "lit": "ack_no_webhook"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 64,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "lib/index.js",
+    "pre": null,
+    "post": null,
+    "nodeVersion": "node24",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:36:42Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-05 00:36:42Z INFO ActionManager] Action node.js file: lib/index.js.
+[2026-06-05 00:36:42Z INFO ActionManager] Action post node.js file: N/A.
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:36:42Z INFO ExecutionContext] Write event payload to C:\projetos\pgats-ci\_work\_temp\_github_workflow\event.json
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:36:42Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'status': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 12,
+  "col": 14,
+  "lit": "failure"
+}
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'job': default value evaluate result: ""
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'content': default value evaluate result: ""
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'title': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 22,
+  "col": 14,
+  "lit": "Execução Manual com Self-Hosted"
+}
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'description': default value evaluate result: ""
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'image': default value evaluate result: ""
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'color': default value evaluate result: ""
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'url': default value evaluate result: ""
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'username': default value evaluate result: ""
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'avatar_url': default value evaluate result: ""
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'nofail': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 44,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'nocontext': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 48,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'noprefix': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 52,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'nodetail': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 56,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'notimestamp': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 60,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:42Z INFO ActionManifestManagerLegacy] Input 'ack_no_webhook': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 64,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:42Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-05 00:36:42Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:42Z INFO HostContext] Well known directory 'Externals': 'C:\projetos\pgats-ci\externals'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   File name: 'C:\projetos\pgats-ci\externals\node24\bin\node.exe'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Arguments: '"C:\projetos\pgats-ci\_work\_actions\sarisia\actions-status-discord\v1\lib/index.js"'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work\pgats-ci\pgats-ci'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:36:42Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:36:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '4a5a9745-2707-4699-8b64-3e15185302f6', success rate: 1/1.
+[2026-06-05 00:36:43Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-05 00:36:43Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\projetos\pgats-ci\_diag\blocks\1062b024-4981-4267-9551-c2fa119080c9_637252d4-5a59-4c76-bf58-71a22f610f7e.1
+[2026-06-05 00:36:43Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-05 00:36:43Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-05 00:36:43Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\projetos\pgats-ci\_diag\blocks\1062b024-4981-4267-9551-c2fa119080c9_2fcaa5fb-0a10-4023-9ea4-2b0c41c78f86.1
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] Process started with process id 4912, waiting for process exit.
+[2026-06-05 00:36:44Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '4a5a9745-2707-4699-8b64-3e15185302f6', success rate: 1/1.
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] Finished process 4912 with exit code 1, and elapsed time 00:00:01.8418579.
+[2026-06-05 00:36:44Z INFO CreateStepSummaryCommand] Step Summary file (C:\projetos\pgats-ci\_work\_temp\_runner_file_commands\step_summary_38cd6ab0-1006-415c-a5bb-3a371a73e8b7) is empty; skipping attachment upload
+[2026-06-05 00:36:44Z INFO StepsRunner] Step result: Failed
+[2026-06-05 00:36:44Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sarisia/actions-status-discord",
+  "ref": "v1",
+  "type": "node24",
+  "stage": "Main",
+  "stepId": "4a5a9745-2707-4699-8b64-3e15185302f6",
+  "stepContextName": "__sarisia_actions-status-discord",
+  "hasPreStep": false,
+  "hasPostStep": false,
+  "result": "failed",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2026-06-05T00:36:42.9207253Z",
+  "finishTime": "2026-06-05T00:36:44.7933377Z"
+}.
+[2026-06-05 00:36:44Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2026-06-05 00:36:44Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-05 00:36:44Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/setup-node@v4'
+[2026-06-05 00:36:44Z INFO StepsRunner] Evaluating: success()
+[2026-06-05 00:36:44Z INFO StepsRunner] Result: false
+[2026-06-05 00:36:44Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-06-05 00:36:44Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-06-05 00:36:44Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-05 00:36:44Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v4'
+[2026-06-05 00:36:44Z INFO StepsRunner] Evaluating: always()
+[2026-06-05 00:36:44Z INFO StepsRunner] Result: true
+[2026-06-05 00:36:44Z INFO StepsRunner] Starting the step.
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:44Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-05 00:36:44Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] Process started with process id 13788, waiting for process exit.
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] Finished process 13788 with exit code 0, and elapsed time 00:00:00.0142533.
+[2026-06-05 00:36:44Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:36:44Z INFO ActionManager] Load action that reference repository from 'C:\projetos\pgats-ci\_work\_actions\actions\checkout\v4'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Actions': 'C:\projetos\pgats-ci\_work\_actions'
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-05 00:36:44Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-05 00:36:44Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-06-05 00:36:44Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:36:44Z INFO ExecutionContext] Write event payload to C:\projetos\pgats-ci\_work\_temp\_github_workflow\event.json
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Temp': 'C:\projetos\pgats-ci\_work\_temp'
+[2026-06-05 00:36:44Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "vvareira/pgats-ci"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-05 00:36:44Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-06-05 00:36:44Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-05 00:36:44Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:44Z INFO HostContext] Well known directory 'Externals': 'C:\projetos\pgats-ci\externals'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   File name: 'C:\projetos\pgats-ci\externals\node20\bin\node.exe'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Arguments: '"C:\projetos\pgats-ci\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Working directory: 'C:\projetos\pgats-ci\_work\pgats-ci\pgats-ci'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-05 00:36:44Z INFO ProcessInvokerWrapper] Process started with process id 21628, waiting for process exit.
+[2026-06-05 00:36:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '4a5a9745-2707-4699-8b64-3e15185302f6', success rate: 1/1.
+[2026-06-05 00:36:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'de284203-b4b9-4724-8ace-5250f572acea', success rate: 1/1.
+[2026-06-05 00:36:45Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2026-06-05 00:36:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'de284203-b4b9-4724-8ace-5250f572acea', success rate: 1/1.
+[2026-06-05 00:36:45Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-05 00:36:45Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-05 00:36:45Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\projetos\pgats-ci\_diag\blocks\1062b024-4981-4267-9551-c2fa119080c9_4a5a9745-2707-4699-8b64-3e15185302f6.1
+[2026-06-05 00:36:46Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-06-05 00:36:46Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:46Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:46Z INFO HostContext] Well known directory 'Work': 'C:\projetos\pgats-ci\_work'
+[2026-06-05 00:36:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'de284203-b4b9-4724-8ace-5250f572acea', success rate: 1/1.
+[2026-06-05 00:36:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'de284203-b4b9-4724-8ace-5250f572acea', success rate: 1/1.
+[2026-06-05 00:36:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-05 00:36:52Z INFO ProcessInvokerWrapper] Finished process 21628 with exit code 0, and elapsed time 00:00:07.8169771.
+[2026-06-05 00:36:52Z INFO CreateStepSummaryCommand] Step Summary file (C:\projetos\pgats-ci\_work\_temp\_runner_file_commands\step_summary_4b1f5126-520b-4f03-8a97-ba6c4a03101f) is empty; skipping attachment upload
+[2026-06-05 00:36:52Z INFO StepsRunner] Step result: 
+[2026-06-05 00:36:52Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "de284203-b4b9-4724-8ace-5250f572acea",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 8,
+  "startTime": "2026-06-05T00:36:44.7951033Z",
+  "finishTime": "2026-06-05T00:36:52.6484413Z"
+}.
+[2026-06-05 00:36:52Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-06-05 00:36:52Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-05 00:36:52Z INFO JobRunner] Finalize job.
+[2026-06-05 00:36:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:52Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:36:52Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:52Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:52Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:36:52Z INFO JobExtension] Initialize Env context
+[2026-06-05 00:36:52Z INFO JobExtension] Initialize steps context
+[2026-06-05 00:36:52Z INFO JobExtension] Total accessible running process: 288.
+[2026-06-05 00:36:52Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2026-06-05 00:36:52Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-06-05 00:36:52Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-06-05 00:36:52Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-06-05 00:36:52Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "f23590fb-799e-4f53-bbab-3241e60f98c7",
+  "result": "succeeded",
+  "errorMessages": [
+    "Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-node@v4. Actions will be forced to run with Node.js 24 by default starting June 16th, 2026. Node.js 20 will "
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-06-05T00:36:52.6592396Z",
+  "finishTime": "2026-06-05T00:36:52.6769895Z"
+}.
+[2026-06-05 00:36:52Z INFO JobRunner] Job result after all job steps finish: Failed
+[2026-06-05 00:36:52Z INFO JobRunner] Completing the job execution context.
+[2026-06-05 00:36:52Z INFO JobRunner] Shutting down the job server queue.
+[2026-06-05 00:36:52Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2026-06-05 00:36:53Z INFO JobServerQueue] All queue process task stopped.
+[2026-06-05 00:36:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f23590fb-799e-4f53-bbab-3241e60f98c7', success rate: 1/1.
+[2026-06-05 00:36:53Z INFO JobServerQueue] Web console line queue drained.
+[2026-06-05 00:36:53Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2026-06-05 00:36:53Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2026-06-05 00:36:53Z INFO JobServerQueue] File upload queue drained.
+[2026-06-05 00:36:53Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-06-05 00:36:53Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2026-06-05 00:36:53Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-05 00:36:53Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\projetos\pgats-ci\_diag\blocks\1062b024-4981-4267-9551-c2fa119080c9_de284203-b4b9-4724-8ace-5250f572acea.1
+[2026-06-05 00:36:54Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-05 00:36:54Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\projetos\pgats-ci\_diag\blocks\1062b024-4981-4267-9551-c2fa119080c9_f23590fb-799e-4f53-bbab-3241e60f98c7.1
+[2026-06-05 00:36:54Z INFO JobServerQueue] Got a job log file to send to results service.
+[2026-06-05 00:36:54Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\projetos\pgats-ci\_diag\blocks\1062b024-4981-4267-9551-c2fa119080c9_0f7f1221-09d8-5c62-ac0f-73a79adeba80.1
+[2026-06-05 00:36:55Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2026-06-05 00:36:55Z INFO JobServerQueue] Results upload queue drained.
+[2026-06-05 00:36:55Z INFO JobServerQueue] Timeline update queue drained.
+[2026-06-05 00:36:55Z INFO JobServerQueue] Disposing job server ...
+[2026-06-05 00:36:55Z INFO JobServerQueue] Disposing results server ...
+[2026-06-05 00:36:55Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2026-06-05 00:36:55Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\projetos\pgats-ci\_work\_temp
+[2026-06-05 00:36:55Z INFO HostContext] Well known directory 'Bin': 'C:\projetos\pgats-ci\bin'
+[2026-06-05 00:36:55Z INFO HostContext] Well known directory 'Root': 'C:\projetos\pgats-ci'
+[2026-06-05 00:36:55Z INFO HostContext] Well known directory 'Diag': 'C:\projetos\pgats-ci\_diag'
+[2026-06-05 00:36:55Z INFO HostContext] Well known config file 'Telemetry': 'C:\projetos\pgats-ci\_diag\.telemetry'
+[2026-06-05 00:36:55Z INFO JobRunner] Raising job completed against run service
+[2026-06-05 00:36:56Z INFO Worker] Job completed.

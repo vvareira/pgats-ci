@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "vvareira/pgats-ci",
+  "pipelineDirectory": "pgats-ci",
+  "workspaceDirectory": "pgats-ci\\pgats-ci",
+  "repositories": {
+    "vvareira/pgats-ci": {
+      "repositoryPath": "pgats-ci\\pgats-ci",
+      "lastRunOn": "06/04/2026 21:35:52 -03:00"
+    }
+  },
+  "lastRunOn": "06/04/2026 21:59:58 -03:00"
+}
